@@ -1,4 +1,4 @@
-import { useState } from "react"; // 1. Added useState
+import React, { useState } from "react"; // 1. Added useState
 import { motion, AnimatePresence } from "framer-motion"; // 2. Added AnimatePresence
 import { ExternalLink, Code2, X } from "lucide-react"; // 3. Added X icon
 import TazakkurImg from "../../assets/Screenshot from 2026-02-12 16-19-09.png";
@@ -23,9 +23,8 @@ const projects = [
 ];
 
 const Projects = () => {
-  const [selectedProject, setSelectedProject] = useState(null);
-
-  const handleLinkClick = (e, project) => {
+const [selectedProject, setSelectedProject] = useState<any>(null);
+  const handleLinkClick = (e:React.MouseEvent, project:any) => {
     if (!project.liveLink) {
       e.preventDefault();
       setSelectedProject(project);
