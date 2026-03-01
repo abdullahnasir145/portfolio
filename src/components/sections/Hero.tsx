@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Code, Sparkles } from 'lucide-react';
 import { Link } from 'react-scroll';
+import MainImg from "../../assets/Me.svg"
 
 const Hero = () => {
     return (
@@ -75,7 +76,7 @@ const Hero = () => {
                             <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-2xl -rotate-6 opacity-20" />
                             <div className="relative w-full h-full bg-gray-200 dark:bg-gray-800 rounded-2xl overflow-hidden border-2 border-gray-100 dark:border-gray-700 flex items-center justify-center">
                                 {/* Placeholder for user image */}
-                                <div className="text-center p-6">
+                                {/* <div className="text-center p-6">
                                     <div className="w-20 h-20 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
                                         <span className="text-3xl">👨‍💻</span>
                                     </div>
@@ -85,7 +86,9 @@ const Hero = () => {
                                     <p className="text-xs text-gray-400 dark:text-gray-500 mt-2">
                                         (In future updates)
                                     </p>
-                                </div>
+                                </div> */}
+                                {/* <MainImg/> */}
+                                <img src={MainImg} alt="Main" className="w-full h-full object-cover" />
                             </div>
 
                             {/* Floating Tech Stack badges */}
